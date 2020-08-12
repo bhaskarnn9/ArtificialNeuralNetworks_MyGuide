@@ -15,20 +15,37 @@ Input is Keras fashion_mnist dataset. Images are of 28 x 28 pixels.
 We create two hidden layers with relu activation functions.
 We create output layer with 10 neurons with softmax activation function
 
+
+
 3. Regression_Sequential.ipynb
 
-This python notebook contains code to build a simple sequential and Multi Layer Perceptrion(MLP) sequential NN model.
+This python notebook contains code to build a Neural Network with two hidden layers.
 We will use TensorFlow's Keras Sequential API.
-Input is sklearn's california_housing dataset.
+Input is Keras California_Housing dataset.
+We create two hidden layers with relu activation functions.
+We create output layer with 10 neurons with linear activation function
 
 
-4. Functional.ipynb
 
-This python notebook contains code to build a complex Functional NN model for regression.
+4. Regression_Functional.ipynb
+
+This python notebook contains code to build a Neural Network with two hidden layers.
 We will use TensorFlow's Keras Functional API.
-Input is sklearn's california_housing dataset.
+Input is Keras California_Housing dataset.
+We create two hidden layers with relu activation functions.
+We create output layer with 10 neurons with linear activation function
 
 
-5. Callbacks_During_Training.ipynb
-In this notebook, we will use Callbacks during training to save a model in .h5 extension so we can load and use at a later time. Using callbacks is very handy when you have large dataset that takes hours to train the model and you have to save each model after an epoch.
-This is also helpful in cases of unexpected interruption, so we wont lose th eentire progress of training.
+
+5. Saving a model
+
+Saving a keras model to .h5 file so that unseen data can be tested without having to run code until model building.
+Using callbacks is very handy when you have large dataset that takes hours to train the model and you have to save each model after an epoch.
+
+
+
+6. Saving a best model based on val_loss and early stopping
+
+Saving best model in the no of epochs we have set.
+1. with creterion: val_loss muinimum in the no of epochs
+2. with criterion: early stopping by setting patience to 10
