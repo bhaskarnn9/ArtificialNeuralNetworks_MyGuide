@@ -16,6 +16,7 @@ We create two hidden layers with relu activation functions.
 We create output layer with 10 neurons with softmax activation function
 
 
+
 3. Regression_Sequential.ipynb
 
 This python notebook contains code to build a Neural Network with two hidden layers.
@@ -23,6 +24,7 @@ We will use TensorFlow's Keras Sequential API.
 Input is Keras California_Housing dataset.
 We create two hidden layers with relu activation functions.
 We create output layer with 10 neurons with linear activation function
+
 
 
 4. Regression_Functional.ipynb
@@ -34,9 +36,13 @@ We create two hidden layers with relu activation functions.
 We create output layer with 10 neurons with linear activation function
 
 
+
 5. Saving a model
 
 Saving a keras model to .h5 file so that unseen data can be tested without having to run code until model building.
+Using callbacks is very handy when you have large dataset that takes hours to train the model and you have to save each model after an epoch.
+
+
 
 6. Saving a best model based on val_loss and early stopping
 
