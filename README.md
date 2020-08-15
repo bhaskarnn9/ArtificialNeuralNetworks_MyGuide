@@ -49,3 +49,9 @@ Using callbacks is very handy when you have large dataset that takes hours to tr
 Saving best model in the no of epochs we have set.
 1. with creterion: val_loss muinimum in the no of epochs
 2. with criterion: early stopping by setting patience to 10
+
+
+7. DigitClassification.ipynb
+
+This python notebook contains code to build a Neural Network with two hidden layers.
+Input is Keras mnist dataset for image classification
